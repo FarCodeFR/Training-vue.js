@@ -1,21 +1,36 @@
 {
   "name": "vue-projet",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "description": "Training Vue JS",
+  "main": "eslint.config.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .ts,.vue src",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "vue": "^3.5.17"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FarCodeFR/Training-vue.js.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FarCodeFR/Training-vue.js/issues"
+  },
+  "homepage": "https://github.com/FarCodeFR/Training-vue.js#readme",
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.0",
-    "@vue/tsconfig": "^0.7.0",
-    "typescript": "~5.8.3",
-    "vite": "^7.0.0",
-    "vue-tsc": "^2.2.10"
+    "@vue/eslint-config-typescript": "^14.5.1",
+    "eslint": "^9.29.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.5.1",
+    "eslint-plugin-vue": "^10.2.0",
+    "prettier": "^3.6.1",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.0"
   }
 }

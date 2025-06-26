@@ -6,10 +6,25 @@ body {
   margin: 0;
 }
 
+:root {
+  --font: sans-serif;
+}
+
+h1 {
+  font-family: var(--font);
+  text-align: center;
+}
+p {
+  font-family: var(--font);
+  text-align: center;
+}
+
 .first-container {
-  border: black solid 2px;
   width: 500px;
+    box-shadow: inset 0 0 5px #0000004a;
+    background-color: rgba(155, 234, 130, 0.669);
   height: 200px;
+  padding: 10px;
   margin: 10% auto;
   border-radius: 10px;
   & h1 {
@@ -23,15 +38,60 @@ body {
     font-size: 1em;
     text-align: center;
   }
-  
+}
+
+.bar-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2% auto;
+  justify-content: center;
+  & input {
+    height: 40px;
+    width: 250px;
+    cursor: pointer;
+    border-left: none;
+    border-radius: 2px;
+    border-top: none;
+    border-bottom: solid 2px black;
+    border-right: none;
+    padding: 10px;
+  }
+  & button {
+    border: none;
+    border-radius: 15px;
+    width: 100px;
+    background-color: rgba(155, 234, 130, 0.669);
+    font-size: 16px;
+    cursor: pointer;
+    transition: ease-in 0.1s;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  }
+  & button:hover{
+    scale: 1.1;
+    
+  }
 }
 .container-button {
   display: flex;
   justify-content: center;
   gap: 2em;
   & button {
-    width: 40px;
-    height: 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    width: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    height: 60px;
     font-size: 30px;
+    transition: ease-in 0.1s;
+  }
+  & button:hover {
+    transform: translateY(2px);
+  }
+  & button:first-of-type:hover {
+    background-color: rgb(20, 168, 20);
+  }
+  & button:last-of-type:hover {
+    background-color: red;
   }
 }

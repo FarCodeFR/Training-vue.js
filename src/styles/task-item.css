@@ -1,0 +1,47 @@
+
+ .done span:first-child {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 8px;
+  width: 50%;
+  margin: 2% auto;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  font-family: var(--font);
+  & li {
+    display: flex;
+    justify-content: space-between;
+  }
+  & li > button{
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 25px;
+  }
+  & li > div > input {
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-radius: 2px;
+    width: 20%;
+    font-size: 20px;
+    border-bottom: dashed 2px black ;
+  }
+  
+}
+.todo-edit {
+text-align: start;
+& button { 
+  cursor: pointer;
+  margin-right: 2%;
+  border: none;
+  background: none;
+ font-size: 25px;
+}
+}
