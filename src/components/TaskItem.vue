@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import "@/styles/task-item.css";
+import "../styles/task-item.css";
 import { ref } from "vue";
 import type { TaskItemProps } from "../types/task";
 
@@ -25,7 +25,7 @@ function updatetitle() {
         <span v-if="!isEditing" role="textbox" @dblclick="isEditing = true" @keydown.enter.prevent="isEditing = true">{{ props.title }}</span>
         <input v-else v-model="editTitle" @keyup.enter="updatetitle" @blur="updatetitle">
       </div>
-      <button tabindex="0" aria-label="Statut de la tâche">{{ props.done ?  "✅" : "❌" }}</button>
+      <button aria-label="Statut de la tâche">{{ props.done ?  "✅" : "❌" }}</button>
     </li>
     <section class="todo-edit">
       <button @click="isEditing = true" aria-label="Modifier la tâche">✏️</button>
