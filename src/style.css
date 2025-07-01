@@ -44,6 +44,7 @@ p {
   display: flex;
   gap: 2rem;
   margin: 2% auto;
+  text-decoration: none;
   justify-content: center;
   & input {
     height: 40px;
@@ -97,6 +98,9 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  }
 }
 
 @media screen and (max-width: 430px) {
+  .first-container {
+    width: 60%;
+  }
 .bar-container {
   width: 80%;
   margin:4% auto;
