@@ -80,7 +80,7 @@ function toggleTask(id: number) {
 </script>
 
 <template>
-  <h1>🧑‍💻 My Todo App with - VUE.JS -</h1>
+  <h1>🧑‍💻 My Todo App with VUE.JS</h1>
   <p>Bienvenue dans ton gestionnaire de tâches personnel !</p>
   <section class="bar-container">
     <input

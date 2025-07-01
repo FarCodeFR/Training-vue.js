@@ -20,7 +20,7 @@ p {
 }
 
 .first-container {
-  width: 500px;
+  width: 40%;
     box-shadow: inset 0 0 5px #0000004a;
     background-color: rgba(155, 234, 130, 0.669);
   height: 250px;
@@ -94,4 +94,18 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;  }
   & button:last-of-type:hover {
     background-color: red;
   }
+}
+
+@media screen and (max-width: 430px) {
+.bar-container {
+  width: 80%;
+  margin:4% auto;
+}
+h1 {
+  font-size: 28px;
+  padding: 10px 20px;
+}
+p {
+  padding: 0 20px 0 20px;
+}
 }
